@@ -26,7 +26,7 @@ const TabNavigator = () => {
       screenOptions={({ route }) => ({
         tabBarActiveTintColor: "#59C1CC",
         tabBarInactiveTintColor: "gray",
-        taBarIcon: ({ focused, color, size }) => {
+        tabBarIcon: ({ focused, color, size }) => {
           if (route.name === "Customers") {
             return (
               <Icon
@@ -38,7 +38,7 @@ const TabNavigator = () => {
           } else if (route.name === "Orders") {
             return (
               <Icon
-                name="orders"
+                name="box"
                 type="entypo"
                 color={focused ? "#EB6A7C" : "gray"}
               />
